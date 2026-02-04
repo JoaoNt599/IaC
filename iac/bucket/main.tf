@@ -19,7 +19,12 @@ terraform {
 }
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = var.bucket
+  # bucket = var.bucket
+  bucket = "terraform-joaovieira-${random_id.suffix.hex}"
+}
+
+resource "random_id" "suffix" {
+  byte_length = 4
 }
 
 resource "aws_s3_bucket_ownership_controls" "bucket-aws_s3_bucket_ownership" {
