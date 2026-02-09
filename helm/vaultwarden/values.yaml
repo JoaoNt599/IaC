@@ -1,0 +1,23 @@
+image:
+  repository: 302770729499.dkr.ecr.us-east-1.amazonaws.com/ecr-vaultwarden
+  tag: vault-868f35d263924fc0d709506bcd4e0d9b294b9e88
+  pullPolicy: IfNotPresent
+
+replicaCount: 1
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources:
+  limits:
+    cpu: "500m"
+    memory: "512Mi"
+  requests:
+    cpu: "250m"
+    memory: "256Mi"
+
+serviceAccount:
+  create: true
+  name: ""
+
