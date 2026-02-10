@@ -1,6 +1,9 @@
 # DevOps Project – Infrastructure as Code (IaC)
 
 
+![alt text](Dia.png)
+
+
 ## Day 1:
 
 - I developed the initial infrastructure using Terraform, provisioning AWS resources, including the creation of an S3 bucket to store the Terraform state and manage the infrastructure as code.
