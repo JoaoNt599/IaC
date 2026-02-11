@@ -1,7 +1,7 @@
 # DevOps Project – Infrastructure as Code (IaC)
 
 
-![alt text](Dia.png)
+![alt text](diagram.png)
 
 
 ## Day 1:
